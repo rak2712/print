@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/rak2712/print.git'  // Change this!
+                git url: 'https://github.com/rak2712/print.git'
             }
         }
         
@@ -21,7 +21,7 @@ pipeline {
                 '''
             }
         }
-        
+
         stage('Run Python script') {
             steps {
                 sh 'python3 print_name.py'
