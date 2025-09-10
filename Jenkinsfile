@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-username/your-repo.git'  // Change this!
+                git 'https://github.com/rak2712/print.git'  // Change this!
             }
         }
         
